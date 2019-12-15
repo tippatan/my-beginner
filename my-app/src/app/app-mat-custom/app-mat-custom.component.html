@@ -1,0 +1,35 @@
+<h1 class="mat-a1-style">Test Custom Mat {{articleGroup}}</h1>
+
+<mat-tab-group >
+    <mat-tab label="RF" (click)="onClickMatHeader($event)"> Content 1 </mat-tab>
+    <mat-tab label="BB"> Content 2 </mat-tab>
+    <mat-tab label="PS"> Content 3 </mat-tab>
+  </mat-tab-group>
+
+
+  <mat-tab-group dynamicHeight>
+    <mat-tab label="Short tab">
+      <div class="example-small-box mat-elevation-z4">
+        Small content
+      </div>
+    </mat-tab>
+    <mat-tab label="Long tab">
+      <div class="example-large-box mat-elevation-z4">
+        Large content
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+
+  <ol>
+    <li>
+      <mat-form-field>
+        <input matInput [(ngModel)]="name" placeholder="What's your name?">
+      </mat-form-field>
+    </li>
+    <li>
+      <button mat-raised-button (click)="openDialog()">Pick one</button>
+    </li>
+    <li *ngIf="animal">
+      You chose: <i>{{animal}}</i>
+    </li>
+  </ol>

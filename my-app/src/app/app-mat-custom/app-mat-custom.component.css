@@ -1,0 +1,33 @@
+/* Styles for tab labels */
+.mat-tab-labels{
+    height: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    z-index:0;
+    background: rgb(220, 255, 223);
+}
+
+/* Styles for tab label */
+.mat-tab-label.ng-star-inserted{
+    height: 30px;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+    height: 30px;
+    background-color: transparent;
+    color: rgb(70, 54, 31);
+    font-weight: 700;
+    background: rgb(161, 255, 73);
+}
+
+/* Styles for the ink bar */
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background-color: rgb(255, 93, 93);
+}
+
+/* Styles for the body content */
+.mat-tab-body-wrapper{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(70, 54, 31);
+}

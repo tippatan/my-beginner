@@ -1,0 +1,29 @@
+<div mat-dialog-content class="col-lg-12 popup-header">
+    <div class="col-lg-6">
+       <strong>Hi {{data.name}}</strong> 
+    </div>
+    <div class="col-lg-6">
+        <i class="fa fa-tint-slash" style="width:50%"></i>
+        <div class="fa fa-arrow-down"></div>
+        <button type="button">
+            
+            <i class="fas fa-times-rectangle-o"></i>
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    
+</div>
+<mat-divider class="popup-content"></mat-divider>
+
+<div mat-dialog-content class="col-lg-12 popup-content">
+    <p>What's your favorite animal?</p>
+    <mat-form-field>
+      <input matInput [(ngModel)]="data.animal">
+    </mat-form-field>
+</div>
+<mat-divider class="popup-content"></mat-divider>
+
+<div mat-dialog-content class="col-lg-12 popup-footer">
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+  </div>
